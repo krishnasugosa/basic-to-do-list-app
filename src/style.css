@@ -1,0 +1,43 @@
+:root{
+  background-color: rgb(28, 28, 28);
+
+}
+
+input{
+  width: clamp(200px,30vw,400px);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  color: white;
+  font-size: 25px;
+  transition: outline-color 1s ease;
+}
+
+input:focus{
+  outline-color: rgb(153, 0, 255);
+  box-shadow: 0px 0px 10px rgb(153, 0, 255);
+}
+
+::placeholder{
+  color: white;
+}
+
+.submit-btn{
+  border: 2px solid white;
+  border-radius: 8px;
+  background-color: transparent;
+  margin-top: 10px;
+  width: clamp(200px,30vw,400px);
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 2s ease;
+}
+
+.submit-btn:focus{
+  background-color: rgb(153, 0, 255);
+  border: 2px solid rgb(153, 0, 255);
+  box-shadow: 0px 0px 10px rgb(153, 0, 255);
+}
